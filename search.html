@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search your Kerword</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	
+</head>
+<body>
+
+	   <form class="form-signin" action="results.php" method="post" role="form">
+             <h2 class="form-signin-heading">Please Search</h2>
+             <input type="name" id="username" name="username" class="form-control" placeholder="Search" required autofocus>
+             
+             <button class="btn btn-lg btn-primary btn-block" type="button">Go </button>
+         </form>
+     
+ <script type="text/javascript">
+
+    	function myFunction() {
+
+    	var makers = {"title":"maheshbabu"}
+
+    	alert("hello");
+		    	$.ajax({
+		    type: "POST",
+		    url: "http://52.36.166.210:5000/todo/api/v1.0/tasks",
+		    // The key needs to match your method's input parameter (case-sensitive).
+		    data: makers,
+		    contentType: "application/json; charset=utf-8",
+		    dataType: "json",
+		    success: function(data){alert(data);},
+		    failure: function(errMsg) {
+		        alert(errMsg);
+    	}
+			});
+
+              
+        }
+    	
+    </script>
+
+</body>
+</html>
