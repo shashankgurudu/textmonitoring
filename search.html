@@ -14,30 +14,6 @@
              <button class="btn btn-lg btn-primary btn-block" type="button">Go </button>
          </form>
      
- <script type="text/javascript">
-
-    	function myFunction() {
-
-    	var makers = {"title":"maheshbabu"}
-
-    	alert("hello");
-		    	$.ajax({
-		    type: "POST",
-		    url: "http://52.36.166.210:5000/todo/api/v1.0/tasks",
-		    // The key needs to match your method's input parameter (case-sensitive).
-		    data: makers,
-		    contentType: "application/json; charset=utf-8",
-		    dataType: "json",
-		    success: function(data){alert(data);},
-		    failure: function(errMsg) {
-		        alert(errMsg);
-    	}
-			});
-
-              
-        }
-    	
-    </script>
-
+ 
 </body>
 </html>
