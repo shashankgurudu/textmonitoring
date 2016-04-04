@@ -1,0 +1,18 @@
+nav .brand-logo {
+  margin-left: 20px;
+}
+nav form {
+  margin-left: 23%;
+  width: 500px;
+}
+.nav-wrapper{
+	margin-top: 0%;
+}
+
+.headfirst {
+    margin-top: 20%;
+    text-align: center;
+}
+body {
+	background: #5F79A0;
+}
