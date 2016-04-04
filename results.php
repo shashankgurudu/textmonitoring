@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html >
+<?php
+$username=$_POST['username'];
+?>
   <head>
     <meta charset="UTF-8">
     <title>Materialize Navbar with Search bar</title>
@@ -30,8 +33,8 @@
         // Create the data table.
         var data = new google.visualization.DataTable();
 
-        var searchterm = "<?php $username ?>";
-
+        var searchterm = "<?php echo $username; ?>";
+        console.log(searchterm);
         var data_file = "http://52.36.166.210:9200/"+ searchterm + "/_search?size=1000&q=*:*";
             var http_request = new XMLHttpRequest();
             try{
